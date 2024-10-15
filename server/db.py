@@ -4,7 +4,6 @@ import os
 
 load_dotenv()
 db_username = os.getenv("MONGODB_USERNAME")
-# Test
 db_password = os.getenv("MONGODB_PASSWORD")
 
 client = MongoClient(f"mongodb+srv://{db_username}:{db_password}@cluster0.iwabec8.mongodb.net/?retryWrites=true&w=majority")
